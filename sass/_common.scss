@@ -1,0 +1,27 @@
+@use "functions";
+@use "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: functions.container(1400, 100);
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}

@@ -1,0 +1,100 @@
+#consult {
+  padding: 100px 0px;
+}
+
+.consult__img img {
+  width: 100%;
+}
+.consult__navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 30px;
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .consult__paragraph {
+    .consult__header {
+      color: var(--unnamed, #333);
+      font-family: Manrope;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 126.316% */
+      text-transform: uppercase;
+    }
+    .consult__text {
+      margin-top: 42px;
+      margin-bottom: 22px;
+      color: var(--unnamed, #333);
+      font-family: Manrope;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+    }
+    .consult__divs {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 49px;
+      @media (max-width: 600px) {
+        flex-wrap: wrap;
+      }
+      .consult__div {
+        padding: 16px 50px 14px 19px;
+        border-radius: 7px;
+        background: var(--unnamed, #fff);
+        color: var(--unnamed, #333);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+      }
+    }
+    .consult__answer {
+      width: 80%;
+      margin-bottom: 24px;
+      padding: 16px 20px 90px 19px;
+      border-radius: 7px;
+      background: var(--unnamed, #fff);
+      /* Тень */
+      color: var(--unnamed, #333);
+      font-family: Manrope;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 26px;
+      box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+    }
+    .consult__white {
+      color: black;
+      background-color: #fff;
+    }
+  }
+  .consult__span {
+    color: var(--unnamed, #333);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .consult__btn {
+    border: none;
+    margin-top: 24px;
+    padding: 14px 55px;
+    border-radius: 9px;
+    color: var(--unnamed, #fff);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    background: var(
+      --3,
+      linear-gradient(122deg, #f32c6d 29.57%, #cb1d95 85.47%)
+    );
+  }
+}

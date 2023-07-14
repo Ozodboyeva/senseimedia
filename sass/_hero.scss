@@ -1,0 +1,123 @@
+@use "variables";
+#hero {
+  padding: 5px 0px;
+  .hero__headers {
+    margin-bottom: 41px;
+    color: var(--unnamed, #333);
+    font-family: Manrope;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+    text-transform: uppercase;
+  }
+}
+.hero__cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 18px;
+  @media (max-width: 1000px) {
+    row-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 900px) {
+    row-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 500px) {
+    row-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero__card {
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+    // padding: 11px 53px;
+    background-color: #fff;
+  }
+  .hero__header_item {
+    padding: 11px 53px;
+    background-color: variables.$btn-background;
+  }
+  .hero__header {
+    color: var(--unnamed, #fff);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 26px; /* 144.444% */
+    text-transform: uppercase;
+  }
+  .hero__main {
+    padding: 11px 53px;
+    background-color: #fff;
+  }
+  .hero__color {
+    color: variables.$chech-color;
+  }
+  .hero__styles {
+    margin-bottom: 8px;
+  }
+  .hero__span {
+    color: var(--unnamed, #333);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  .line2 {
+    margin: 94px 5px 10px;
+    width: 90%;
+    border: 1px solid #e2e2e2;
+  }
+  .hero__lasts {
+    padding: 11px 53px 16px;
+    display: flex;
+    .hero_num {
+      color: var(--unnamed, #333);
+      font-family: Manrope;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .hero__big-number {
+      background: var(
+        --2,
+        linear-gradient(122deg, #9021ac 33.46%, #c8459f 75.87%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Manrope;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 24px;
+    }
+  }
+}
+.hero__btns {
+  display: flex;
+  gap: 50px;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+  .hero__btn {
+    margin-top: 21px;
+    padding: 14px 53px;
+    border: none;
+    color: var(--unnamed, #fff);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    border-radius: 9px;
+    background: var(
+      --3,
+      linear-gradient(122deg, #f32c6d 29.57%, #cb1d95 85.47%)
+    );
+  }
+}

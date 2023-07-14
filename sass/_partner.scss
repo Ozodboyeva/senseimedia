@@ -1,0 +1,108 @@
+#partners {
+  background-color: #f7f6ff;
+  padding: 100px 0px;
+  .partners__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .partner__paragraph {
+      margin-bottom: 50px;
+      color: var(--unnamed, #333);
+      font-family: Manrope;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 126.316% */
+      text-transform: uppercase;
+    }
+  }
+}
+.partners__boxs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 30px;
+  @media (max-width: 1000px) {
+    row-gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .partner__box {
+    .partner__box-items {
+      padding: 9px 23px;
+      border-radius: 15px;
+      background: var(--unnamed, #fff);
+      box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .partner__box-paragraph {
+      color: var(--unnamed, #333);
+      font-family: Manrope;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 162.5% */
+    }
+  }
+  .partner__result {
+    padding: 9px 23px;
+    border-radius: 15px;
+    background: #f3f1fe;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+    .partner__items {
+      margin-top: 23px;
+      margin-bottom: 10px;
+      color: var(--unnamed, #333);
+      font-family: Manrope;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 26px; /* 144.444% */
+      text-transform: uppercase;
+    }
+  }
+  .partner__result-boxs {
+    display: flex;
+    gap: 10px;
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
+    .partner__result-num {
+      color: var(--unnamed, #333);
+      font-family: Manrope;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 26px;
+    }
+    .partner__result-header {
+      margin-bottom: 25px;
+      color: var(--unnamed, #333);
+      font-family: Manrope;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+    }
+  }
+}
+.partners-last {
+  padding: 9px 23px;
+  border-radius: 15px;
+  background: var(--unnamed, #fff);
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+}
+.partners-last h4 {
+  margin-top: 24px;
+  margin-bottom: 13px;
+  color: var(--unnamed, #333);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 26px; /* 144.444% */
+  text-transform: uppercase;
+}
+.partner__system-left {
+  display: flex;
+  margin-bottom: 25px;
+}
